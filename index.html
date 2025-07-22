@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-purple-500 to-indigo-700 min-h-screen">
+    <!-- Menu Button -->
+    <div class="fixed top-6 left-6 z-50">
+        <button id="menuBtn" class="text-white p-2 rounded-md hover:bg-white/20 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay fixed top-0 left-0 h-full w-64 bg-black/90 z-40 flex flex-col">
+        <div class="p-6 mt-16">
+            <!--Foto Profile-->
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/30">
+                <img src="img/download.jpeg" alt="Profile Foto" class="w-full h-full object-cover">
+            </div>
+            <nav>
+                <ul class="space-y-6 text-lg">
+                    <li>
+                        <a href="index.html" class="text-white hover:text-purple-300 transition flex items-center gap-3">
+                            <i class="fas fa-home w-6"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-white hover:text-purple-300 transition flex items-center gap-3">
+                            <i class="fas fa-user w-6"></i> About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-white hover:text-purple-300 transition flex items-center gap-3">
+                            <i class="fas fa-envelope w-6"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mt-auto p-6">
+            <h3 class="text-white text-sm font-medium mb-3">Change Background</h3>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-purple-500 to-indigo-700" data-from="purple-500" data-to="indigo-700"></div>
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-blue-500 to-teal-400" data-from="blue-500" data-to="teal-400"></div>
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-rose-400 to-orange-500" data-from="rose-400" data-to="orange-500"></div>
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-emerald-500 to-lime-600" data-from="emerald-500" data-to="lime-600"></div>
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-slate-700 to-slate-900" data-from="slate-700" data-to="slate-900"></div>
+                <div class="bg-option h-8 rounded-md bg-gradient-to-br from-pink-500 to-purple-900" data-from="pink-500" data-to="purple-900"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay for closing menu when clicked outside -->
+    <div id="backdropOverlay" class="fixed inset-0 bg-black/50 z-30 hidden"></div>
+    
+    <!-- Home Content -->
+    <div class="container mx-auto px-4 py-20">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mb-8 flex justify-center">
+                <div class="h-40 w-40 rounded-full bg-white/20 flex items-center justify-center overflow-hidden border-4 border-white/30">
+                    <img src="download.jpeg" alt="Foto Profile" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Portofolio Benben</h1>
+            <p class="text-xl text-white/80 mb-8">Web Developer & Designer</p>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-8 shadow-lg">
+                <h2 class="text-2xl font-semibold text-white mb-4">Wilujeng Sumping</h2>
+                <p class="text-white/80 mb-6">
+                    Menika website ingkang kula damel wonten Canva AI, lajeng kula rubah sakedhik liwat chat Gepetai, menawi wonten ingkang kirang utawi kirang marem, nyuwun pangapunten, matur nuwun.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="about.html" class="bg-white text-purple-700 px-6 py-3 rounded-full font-medium hover:bg-purple-100 transition">
+                        About Me
+                    </a>
+                    <a href="contact.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+                    <!-- Gambar Besar di Samping Kanan -->
+                <div class="floating-image-container">
+                    <img src="animasiadatSumatera-removebg-preview.png" alt="Hero Image" 
+                        class="w-[250px] md:w-[350px] lg:w-[400px]" 
+                        id="floatingImage">
+                </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
